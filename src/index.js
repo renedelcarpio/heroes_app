@@ -1,3 +1,5 @@
+import './index.scss';
+
 import HeroesApp from './HeroesApp';
 import React from 'react';
 import ReactDOM from 'react-dom';
