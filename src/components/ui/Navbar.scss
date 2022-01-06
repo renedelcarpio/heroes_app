@@ -1,3 +1,88 @@
 @import '../../index.scss';
 
+.navbar {
+  background-color: $color-dark;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+  width: 100vw;
+
+  .navbar__brand {
+    color: $color-light;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    width: 20%;
+
+    &:hover {
+      color: $color-secondary-marvel;
+    }
+  }
+
+  &__heroes {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+  }
+
+  &__login {
+    width: 20%;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-item {
+    color: $color-light;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:hover {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.marvel-active {
+  color: $color-primary-marvel;
+  font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.dc-active {
+  color: $color-primary-dc;
+  font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:hover {
+      font-size: 1.8rem;
+    }
+}
+
+.button {
+  background-color: transparent;
+  border: 0.2rem solid $color-mid;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 0.3rem 0.6rem;
+
+  &:hover {
+    font-size: 1.5rem;
+    color: $color-secondary-dc;
+    border: 0.2rem solid $color-secondary-dc;
+  }
+}
 

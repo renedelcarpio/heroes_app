@@ -1,29 +1,36 @@
+import './Navbar.scss';
+
 import { Link, NavLink } from 'react-router-dom';
 
 import React from 'react';
 
 export const Navbar = () => {
+	const handleLogout = () => {
+		//TODO: Give functionality
+		console.log('logout');
+	};
+
 	return (
 		<nav className='navbar'>
 			<Link className='navbar__brand' to='/'>
 				Heroes App
 			</Link>
 
-			<div className='navbar__collapse'>
+			<div className='navbar__heroes'>
 				<div className='navbar__nav'>
 					<NavLink
-						activeClassName='active'
-						className='navbar__nav-item'
-						exact
+						className={({ isActive }) =>
+							'navbar__nav-item ' + (isActive ? 'marvel-active' : '')
+						}
 						to='/marvel'
 					>
 						Marvel
 					</NavLink>
 
 					<NavLink
-						activeClassName='active'
-						className='navbar__nav-item'
-						exact
+						className={({ isActive }) =>
+							'navbar__nav-item ' + (isActive ? 'dc-active' : '')
+						}
 						to='/dc'
 					>
 						DC
@@ -31,16 +38,12 @@ export const Navbar = () => {
 				</div>
 			</div>
 
-			<div className='navbar__collapse'>
+			<div className='navbar__login'>
 				<ul className='navbar__nav'>
-					<NavLink
-						activeClassName='active'
-						className='navbar__nav-item'
-						exact
-						to='/login'
-					>
+					<span className='navbar__nav-item'>Pancho</span>
+					<button className='navbar__nav-item button' onClick={handleLogout}>
 						Logout
-					</NavLink>
+					</button>
 				</ul>
 			</div>
 		</nav>

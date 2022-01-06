@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+$font-primary: 'Comic Neue', cursive;
+$color-primary-marvel: #da1f28;
+$color-secondary-marvel: #fbca03;
+$color-primary-dc: #0060aa;
+$color-secondary-dc: #e20025;
+$color-dark: #010101;
+$color-mid: #909aa0;
+$color-light: #fafaf9;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,4 +17,5 @@
 
 html {
   font-size: 62.5%;
+  font-family: $font-primary;
 }
