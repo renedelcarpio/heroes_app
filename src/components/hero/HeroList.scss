@@ -3,4 +3,8 @@
 .card__container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 5rem 0;
+  overflow: scroll;
 }

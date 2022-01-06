@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.dc__container {
+  background-color: $color-dark;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dc__image-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dc__image {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.dc__cards-container {
+  position: relative;
+  z-index: 10;
+}
