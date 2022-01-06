@@ -1,3 +1,5 @@
+import './HeroList.scss';
+
 import HeroCard from './HeroCard';
 import { getHeroesByPublisher } from '../../helpers/getHeroesByPublisher';
 
@@ -5,7 +7,7 @@ const HeroList = ({ publisher }) => {
 	const heroes = getHeroesByPublisher(publisher);
 
 	return (
-		<div>
+		<div className='card__container'>
 			{heroes.map((hero) => (
 				<HeroCard key={hero.id} {...hero} />
 			))}
