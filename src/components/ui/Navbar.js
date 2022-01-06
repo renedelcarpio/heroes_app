@@ -1,13 +1,14 @@
 import './Navbar.scss';
 
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 import React from 'react';
 
 export const Navbar = () => {
+	const navigate = useNavigate();
+
 	const handleLogout = () => {
-		//TODO: Give functionality
-		console.log('logout');
+		navigate('/login', { replace: true });
 	};
 
 	return (
