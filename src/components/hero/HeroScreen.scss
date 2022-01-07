@@ -58,18 +58,18 @@
   }
 
   &__button {
-    background-color: $color-secondary-marvel;
-    border: none;
+    background-color: transparent;
+    border: 0.2rem solid $color-secondary-marvel;
     border-radius: 1rem;
-    color: $color-light;
+    color: $color-secondary-marvel;
     font-weight: bold;
     margin-top: 3rem;
     padding: 1rem 2rem;
     transition: all 0.3s;
 
     &:hover {
-      font-size: 1.5rem;
-      box-shadow: 0.3rem 0.1rem 1rem $color-secondary-marvel;
+      background-color: $color-secondary-marvel;
+      color: $color-light;
     }
   }
 }
