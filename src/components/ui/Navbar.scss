@@ -44,7 +44,7 @@
     transition: all 0.3s;
 
     &:hover {
-      font-size: 1.8rem;
+      color: $color-mid;
     }
   }
 }
@@ -71,6 +71,19 @@
     }
 }
 
+.search-active {
+  color: $color-secondary-marvel;
+  font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:hover {
+      font-size: 1.8rem;
+    }
+}
+
 .button {
   background-color: transparent;
   border: 0.2rem solid $color-mid;
@@ -80,9 +93,14 @@
   padding: 0.3rem 0.6rem;
 
   &:hover {
-    font-size: 1.5rem;
-    color: $color-secondary-dc;
     border: 0.2rem solid $color-secondary-dc;
+    color: $color-secondary-dc;
   }
 }
 
+@media screen and(max-width: 400px) {
+  .name-button {
+    display: flex;
+    flex-direction: column;
+  }
+}

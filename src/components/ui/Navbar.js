@@ -36,11 +36,20 @@ export const Navbar = () => {
 					>
 						DC
 					</NavLink>
+
+					<NavLink
+						className={({ isActive }) =>
+							'navbar__nav-item ' + (isActive ? 'search-active' : '')
+						}
+						to='/search'
+					>
+						Search
+					</NavLink>
 				</div>
 			</div>
 
 			<div className='navbar__login'>
-				<ul className='navbar__nav'>
+				<ul className='navbar__nav name-button'>
 					<span className='navbar__nav-item'>Pancho</span>
 					<button className='navbar__nav-item button' onClick={handleLogout}>
 						Logout
