@@ -98,6 +98,10 @@
   }
 }
 
+.user-name {
+  color: $color-primary-dc;
+}
+
 @media screen and(max-width: 400px) {
   .name-button {
     display: flex;
