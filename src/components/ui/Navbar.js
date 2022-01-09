@@ -10,8 +10,6 @@ export const Navbar = () => {
 	const { user, dispatch } = useContext(AuthContext);
 	const navigate = useNavigate();
 
-	console.log(user);
-
 	const handleLogout = () => {
 		dispatch({
 			type: types.logout,

@@ -10,14 +10,16 @@ const LoginScreen = () => {
 	const { dispatch } = useContext(AuthContext);
 
 	const handleLogin = () => {
-		navigate('/', { replace: true });
-
 		const action = {
 			type: types.login,
 			payload: { name: 'Santi' },
 		};
 
 		dispatch(action);
+
+		const lastPath = localStorage.getItem('lastPath') || '/';
+
+		navigate(lastPath, { replace: true });
 	};
 
 	return (
