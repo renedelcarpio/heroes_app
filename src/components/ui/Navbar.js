@@ -9,6 +9,8 @@ export const Navbar = () => {
 	const { user } = useContext(AuthContext);
 	const navigate = useNavigate();
 
+	console.log(user);
+
 	const handleLogout = () => {
 		navigate('/login', { replace: true });
 	};
@@ -52,7 +54,7 @@ export const Navbar = () => {
 
 			<div className='navbar__login'>
 				<ul className='navbar__nav name-button'>
-					<span className='navbar__nav-item user-name'>{user}</span>
+					<span className='navbar__nav-item user-name'>{user.name}</span>
 					<button className='navbar__nav-item button' onClick={handleLogout}>
 						Logout
 					</button>
