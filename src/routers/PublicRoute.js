@@ -5,7 +5,7 @@ import { useContext } from 'react';
 const PublicRoute = ({ children }) => {
 	const { user } = useContext(AuthContext);
 
-	return !user.logged ? children : <Navigate to='/' />;
+	return user.logged ? <Navigate to='/' /> : children;
 };
 
 export default PublicRoute;
