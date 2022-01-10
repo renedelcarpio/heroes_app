@@ -90,6 +90,11 @@ Array [
         src="https://thecouch.world/wp-content/uploads/2018/02/Marvel-Comics-Logo-Desktop-Wallpaperconv.jpg"
       />
     </div>
+    <h1
+      className="marvel__title"
+    >
+      Marvel Super Heroes
+    </h1>
     <div
       className="marvel__cards-container"
     >
