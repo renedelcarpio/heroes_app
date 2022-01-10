@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in LoginScreen component should match with snapshot 1`] = `
+<div
+  className="login"
+>
+  <h1>
+    Login
+  </h1>
+  <hr />
+  <button
+    className="button-login"
+    onClick={[Function]}
+  >
+    Login
+  </button>
+</div>
+`;
