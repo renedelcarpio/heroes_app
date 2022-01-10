@@ -4,7 +4,16 @@
   background-color: $color-dark;
   position: relative;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.dc__title {
+  background-color: transparent;
+  color: $color-light;
+  font-size: 8rem;
+  position: relative;
+  text-align: center;
+  z-index: 100;
 }
 
 .dc__image-container {
@@ -26,4 +35,10 @@
 .dc__cards-container {
   position: relative;
   z-index: 10;
+}
+
+@media screen and(max-width: 450px) {
+  .dc__title {
+    font-size: 4rem;
+  }
 }

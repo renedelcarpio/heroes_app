@@ -4,7 +4,16 @@
   background-color: $color-dark;
   position: relative;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.marvel__title {
+  background-color: transparent;
+  color: $color-light;
+  font-size: 8rem;
+  position: relative;
+  text-align: center;
+  z-index: 100;
 }
 
 .marvel__image-container {
@@ -28,3 +37,8 @@
   z-index: 10;
 }
 
+@media screen and(max-width: 450px) {
+  .marvel__title {
+    font-size: 4rem;
+  }
+}

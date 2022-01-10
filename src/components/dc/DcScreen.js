@@ -10,6 +10,7 @@ const DcScreen = () => {
 			<div className='dc__image-container'>
 				<img src={dcImageUrl} alt='DC Logo' className='dc__image' />
 			</div>
+			<h1 className='dc__title'>DC Super Heroes</h1>
 			<div className='dc__cards-container'>
 				<HeroList publisher={'DC Comics'} />
 			</div>

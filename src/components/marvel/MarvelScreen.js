@@ -11,6 +11,7 @@ const MarvelScreen = () => {
 			<div className='marvel__image-container'>
 				<img src={marvelImageUrl} alt='DC Logo' className='marvel__image' />
 			</div>
+			<h1 className='marvel__title'>Marvel Super Heroes</h1>
 			<div className='marvel__cards-container'>
 				<HeroList publisher={'Marvel Comics'} />
 			</div>
